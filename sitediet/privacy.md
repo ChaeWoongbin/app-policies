@@ -45,7 +45,7 @@ SiteDiet does not request access to your contacts, camera, microphone, or precis
 
 ## 4. Storage, retention, and deletion
 
-Settings and focus history remain in the app's private device storage until you delete them. SiteDiet does not apply the generic 12-month or 24-month server retention periods used in some policy templates, and WoongSW does not maintain a server copy of your focus records.
+Settings and focus history remain in the app's private device storage until you delete them. WoongSW does not maintain a server copy of your focus records.
 
 - Use **Clear history** in the history tab to delete focus records. This does not stop an active blocking session or delete your site settings.
 - Remove custom domains in the site settings.
