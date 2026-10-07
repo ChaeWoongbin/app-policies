@@ -1,104 +1,87 @@
-**Privacy Policy**
+---
+layout: default
+title: SiteDiet Privacy Policy
+---
 
-This privacy policy applies to the SiteDiet app for mobile devices, together with any related services operated by WoongSW (collectively, the "Application"). WoongSW is hereby referred to as the "Service Provider".
+# SiteDiet Privacy Policy
 
-**Information Collection and Use**
+**Effective date: October 7, 2026**
 
-The Application collects information when you download and use it. This information may include information such as
+This Privacy Policy applies to the SiteDiet Android app provided by **WoongSW** ("we", "us", or "our"). SiteDiet helps you limit access to selected websites for a chosen focus period.
 
-*   Your device's Internet Protocol address
-*   The pages of the Application that you visit, the time and date of your visit, the time spent on those pages
-*   The time spent on the Application
-*   your mobile operating system you use
+## 1. Information processed on your device
 
-**Cookies and tracking technologies**
+SiteDiet stores the following information in the app's private storage on your device to provide its features:
 
-The Application or its third-party SDKs may use cookies, SDKs, pixels, and similar technologies to support functionality, analytics, or service delivery. Where required by applicable law, the Service Provider will obtain consent before using non-essential tracking technologies.
+- Your selected websites, custom domains, and blocking preferences.
+- Your selected language and focus duration or scheduled end time.
+- Focus session records, including start and end times, applied duration, selected sites, changes to site selections, and the reason a session ended.
+- Operational settings and status information needed to manage blocking and notifications.
 
-**Your Rights**
+These settings and focus records are not uploaded by SiteDiet to WoongSW. SiteDiet does not require an account and does not include advertising SDKs, analytics SDKs, tracking pixels, or marketing trackers.
 
-You may request access to, correction of, or deletion of your personal data held by the Service Provider. To exercise these rights, or to withdraw consent where processing is based on consent, contact the Service Provider at jerpi053@gmail.com.
+Focus records describe your blocking sessions; they are not a log of the web pages you visit. SiteDiet does not save a history of DNS queries or read website content, messages, passwords, or the contents of encrypted HTTPS connections. It displays a count of blocked DNS requests during the current session without storing a per-request browsing history.
 
-**Your California privacy rights (CCPA/CPRA)**
+## 2. Local VPN and DNS processing
 
-If you are a California resident, you have the right to know what personal information is collected, the right to delete personal information, the right to opt out of the sale or sharing of personal information, and the right to non-discrimination for exercising these rights. To exercise your CCPA/CPRA rights, contact the Service Provider at jerpi053@gmail.com.
+SiteDiet uses Android's VPN service, with your approval, to process DNS requests on your device and compare the requested domain names against your selected blocking list. Requests matching that list are answered locally with a blocking response.
 
-The Service Provider may use the information you provide to send important information, required notices, and, where permitted by law, marketing communications.
+DNS requests handled by SiteDiet that are not blocked are sent to **Cloudflare's public DNS resolver at 1.1.1.1** to resolve domain names. This processing can include DNS requests from other apps on your device, not only your browser. Cloudflare receives the requested domain name, DNS query information, and the network source IP address used to reach its resolver. WoongSW does not operate this resolver or receive these requests on its own servers.
 
-For a better experience while using the Application, the Service Provider may require you to provide certain personally identifiable information. The information the Service Provider requests will be retained and used as described in this privacy policy.
+The current app sends these DNS requests using standard **unencrypted UDP DNS on port 53**. The local VPN permission does not make these DNS requests encrypted. Network operators or others able to observe that network connection may be able to see the DNS queries. SiteDiet does not route ordinary web traffic through a WoongSW VPN server or decrypt HTTPS traffic.
 
-**Third Party Access**
+Cloudflare's processing and retention practices are described in its [Public DNS Resolver privacy notice](https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/) and [Privacy Policy](https://www.cloudflare.com/privacypolicy/). Its infrastructure may process DNS requests outside your country.
 
-Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
+You can stop this DNS processing by ending the blocking session or revoking SiteDiet's VPN permission in Android settings. Another VPN cannot be used at the same time in the same Android user profile.
 
-**International Data Transfers**
+## 3. Permissions
 
-The Service Provider or its third-party service providers may transfer personal data to countries outside your country of residence, including outside the European Economic Area (EEA). Where applicable law requires safeguards for international transfers, the Service Provider will use appropriate mechanisms.
+- **VPN approval:** Allows local DNS filtering while a blocking session is running.
+- **Internet and network state access:** Allows DNS resolution and network-related operation.
+- **Foreground service:** Keeps an active blocking session running in the background.
+- **Notifications:** If you allow notifications, SiteDiet displays blocking status, remaining time, and the scheduled end time. Notification visibility is controlled by your Android settings.
 
-*   Standard Contractual Clauses (SCCs) approved by the European Commission
-*   Adequacy decisions or other legally recognized transfer mechanisms
-*   Your consent, where required and legally permitted
+SiteDiet does not request access to your contacts, camera, microphone, or precise location.
 
-Data protection laws in other countries may differ from those in your jurisdiction. Where required by law, the Service Provider will apply appropriate safeguards and obtain any consent required for the transfer.
+## 4. Storage, retention, and deletion
 
-Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
+Settings and focus history remain in the app's private device storage until you delete them. SiteDiet does not apply the generic 12-month or 24-month server retention periods used in some policy templates, and WoongSW does not maintain a server copy of your focus records.
 
-*   [Google Play Services](https://www.google.com/policies/privacy/)
-*   [AdMob](https://policies.google.com/technologies/partner-sites)
+- Use **Clear history** in the history tab to delete focus records. This does not stop an active blocking session or delete your site settings.
+- Remove custom domains in the site settings.
+- Clear SiteDiet's app storage in Android settings to remove its locally stored settings and history.
+- Uninstalling the app normally removes its local app data.
 
-The Service Provider may disclose User Provided and Automatically Collected Information:
+Android may back up or transfer app data according to your device, operating system, backup provider, and backup settings. Such backups may include preferences and focus history. Clearing app storage or uninstalling does not necessarily delete an existing system backup, and a backup may be restored when the app is reinstalled. Manage backups through your device or backup provider's settings.
 
-*   as required by law, such as to comply with a subpoena, or similar legal process;
-*   when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;
-*   with their trusted services providers who work on their behalf, do not have an independent use of the information the Service Provider discloses to them, and have agreed to adhere to the rules set forth in this privacy statement.
+Cloudflare controls the retention and deletion of data processed by its DNS service under its own policies.
 
-**Opt-Out Rights**
+## 5. Information you send when contacting us
 
-You can stop further collection of information from your mobile device by uninstalling the Application. Uninstalling will stop the Application from collecting data from your device, but it does not automatically delete information that has already been transmitted to the Service Provider or to third parties.
+If you email **jerpi053@gmail.com**, we receive your email address and the information you choose to include. We use this information to respond to your inquiry and provide support, not for marketing. Email is processed by our email provider, Google, under its [Privacy Policy](https://policies.google.com/privacy).
 
-To request deletion of your personal data, to withdraw consent, or to exercise any of your rights, contact the Service Provider at jerpi053@gmail.com.
+We retain support correspondence only as needed to handle the inquiry and meet applicable legal obligations. You may contact us to request access, correction, or deletion of personal information held in that correspondence. We do not need your app's locally stored focus history to respond unless you choose to share it.
 
-**Data Retention Policy**
+We do not sell your personal information or share it for targeted advertising.
 
-The Service Provider retains personal data based on its necessity for the stated purposes:
+## 6. Security
 
-*   User Provided Data: Retained for the duration of your use of the Application plus 12 months thereafter, unless longer retention is required by law
-*   Automatically Collected Data: Retained for up to 24 months from collection, unless longer retention is required for legal compliance
-*   Aggregated and Anonymized Data: Retained indefinitely as it no longer identifies you
-*   Data required for legal compliance: Retained as long as required by applicable law
+SiteDiet uses Android's private app storage for settings and focus history. Device security, backups, and notification visibility depend on your Android configuration. DNS transmission has the limitations described in Section 2. No storage or transmission method can guarantee absolute security.
 
-You may request deletion of your personal data, subject to any legal obligation to retain it. If you want the Service Provider to delete User Provided Data submitted through the Application, please contact them at jerpi053@gmail.com. Please note that some User Provided Data may be required for the Application to function properly.
+## 7. Children
 
-**Children**
+SiteDiet is not intended for children under 16 years of age. We do not knowingly solicit personal information from children. If you believe a child has sent personal information to us through support correspondence, contact us so we can address it and delete it where appropriate.
 
-The Application is not intended for children under 16 years of age, or such higher age as required by applicable law. The Service Provider does not knowingly solicit data from children or market the Application to them.
+## 8. This policy website
 
-Where parental or guardian consent is required under applicable law, the Application is not intended for use without that consent. The Service Provider does not knowingly collect personally identifiable information from children under 16 years of age in violation of applicable law. In the event the Service Provider discovers that a child has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided the Service Provider with personal information, please contact the Service Provider (jerpi053@gmail.com) so that they will be able to take the necessary actions.
+This policy page is hosted on **GitHub Pages**. Opening the page is separate from using the SiteDiet app. GitHub may process technical information, including visitors' IP addresses, to provide and secure its hosting service, as described in the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-**Security**
+## 9. Changes to this policy
 
-The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.
+We will post updates on this page and change the effective date when this policy is revised. If app features or data processing change, we will update the policy and provide any additional notice or consent required by applicable law.
 
-**Data Breach Notification**
+## 10. Contact
 
-If a data breach occurs that affects your personal data, the Service Provider will notify you in accordance with applicable legal requirements, including, where required, providing information about the nature of the breach and the steps being taken to address it.
-
-**Changes**
-
-The Service Provider may update this Privacy Policy from time to time. The Service Provider will notify you of material changes by posting the updated Privacy Policy with an effective date. Where required by law, the Service Provider will seek your consent to material changes before they take effect.
-
-Previous versions of this Privacy Policy will be maintained and made available upon request by contacting the Service Provider at jerpi053@gmail.com.
-
-This privacy policy is effective as of 2026-10-06
-
-**Your Consent**
-
-Where processing is based on consent, you provide that consent by affirmatively opting in to the relevant feature or action. You may withdraw consent at any time without affecting processing carried out before withdrawal. Processing based on other lawful bases is carried out as described above.
-
-**Contact Us**
-
-If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at jerpi053@gmail.com.
-
-* * *
-
-<span>This privacy policy page was generated by</span> [App Privacy Policy Generator](https://app-privacy-policy-generator.nisrulz.com/)
+**Service provider:** WoongSW  
+**App:** SiteDiet  
+**Email:** [jerpi053@gmail.com](mailto:jerpi053@gmail.com)
